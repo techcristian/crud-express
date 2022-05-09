@@ -1,0 +1,41 @@
+{{#each errors }}
+<div class="alert alert-danger alert-dismissible fade show" role="alert">
+    {{text}}
+    <button type="button" class="close" data-bs-dismiss="alert" aria-label="close">
+        <span arial-hidden="true">&times;</span>
+    </button>
+</div>
+{{/each}}
+
+<div  class="row">
+
+<div  class="col-md-4 mx-auto">
+    
+    <div  class="card list" >
+
+        <div class="card-header text-center">
+            <h4> New Note</h4>
+        </div>
+            <img class="animate__animated animate__bounceInDown" src="/img/new.jpg" class=" mx-auto d-block m-4 nota" alt="nota">
+            <div class="card-body text-center">
+            <form action="/notes/new-note" method="POST">
+                <div class="form-group">
+                    <input type='text' name="title" placeholder="title" class="form-control" autofocus>
+                </div>
+
+                <div class="from-group">
+                    <textarea name="description" class="form-control" placeholder="description"></textarea>
+                </div>
+                <div class="form-control">
+                    <button class="btn" class="form-control" type="submit">
+                        SAVE NOTE
+                    </button>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+</div>

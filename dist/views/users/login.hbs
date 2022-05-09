@@ -1,0 +1,50 @@
+
+
+
+
+
+
+<!--  mensages exitosos -->
+{{#if success_msg}}
+
+<div class="alert alert-danger alert-dismissible fade show" role="alert">
+    {{success_msg}}
+    <button type="button" class="close" data-bs-dismiss="alert" aria-label="close">
+        <span arial-hidden="true">&times;</span>
+
+    </button>
+</div>
+{{/if}}
+<div class="row">
+    <div class="col-md-4 mx-auto">
+        <div  class="card login">
+            <div class="card-header text-center">
+                <h4 class="animate__animated animate__bounceInLeft">LOGIN</h4>
+            </div>
+            <img class="animate__animated animate__fadeInDownBig" src="/img/login.jpg" class="mx-auto login index" alt="logo" >
+        
+            <div class="card-body text-center">
+                <form action="/users/login" method="POST">
+
+                    <div class="form-group">
+                    
+                        <input type="email" name="email"  placeholder="Email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        
+                        <input type="password" name="password" class="form-control" placeholder="Password">
+
+                    </div>
+
+                    <div class="form-control">
+                        <button class="btn" class="form-control" type="submit">
+                            CLICK FOR LOGIN
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</div>
